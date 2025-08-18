@@ -132,7 +132,7 @@ public class mainWindow extends JFrame {
         this.setTitle("Chax IDE");
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setResizable(false);
+        this.setResizable(true);
         this.setVisible(true);
     }
 

@@ -73,7 +73,6 @@ public class welcomeScreen {
         myWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myWindow.setLayout(null);
         myWindow.setTitle("Chax IDE");
-        myWindow.setResizable(false);
         myWindow.setLocationRelativeTo(null);
 
         welcomePanel = new JPanel(new GridBagLayout());
