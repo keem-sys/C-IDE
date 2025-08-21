@@ -6,6 +6,7 @@ import java.awt.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 import org.fife.ui.rtextarea.*;
 import org.fife.ui.rsyntaxtextarea.*;
@@ -126,13 +127,12 @@ public class mainWindow extends JFrame {
 //        myMenu.add(viewOnline);
 //        myMenu.add(runMenu);
 
-        this.setIconImage(ImageIO.read(getClass().getClassLoader().getResource("icons/logo.png")));
+        this.setIconImage(ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResource("icons/logo.png"))));
 //        this.setJMenuBar(myMenu);
         this.setSize(1400, 800);
         this.setTitle("Chax IDE");
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setResizable(true);
         this.setVisible(true);
     }
 
